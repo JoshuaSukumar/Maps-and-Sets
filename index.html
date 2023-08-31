@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>MAPS AND SETS | JavaScript hands-on</title>
+</head>
+<body>
+   <h1>Maps and Sets - Hands-On</h1>
+   <section>
+      <h2>Question 1 :- "Problem:
+You are given a string (STR) of length N, consisting of only the lower case English alphabet.
+Your task is to remove all the duplicate occurrences of characters in the string.
+      </h2>
+      <pre>
+         function original(string) {
+            let string2 = string.split('');
+            let string3 = new Set(string2);
+            let string4 = [...string3].join('');
+            let answer1 = document.getElementById('answer1');
+            answer1.innerText = string4;
+            console.log(string4);
+         }
+         original("abcadeecfb")
+      </pre>
+      <p id="answer1"></p>
+   </section>
+
+   <section>
+      <h2>Question 2 :- "Problem:
+You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps)
+      </h2>
+      <pre>
+         function original1(string) {
+         let array2 = new Map();
+         let num = 1;
+         for(let count of string) {
+            if(array2.has(count)) {
+               array2.set(count, array2.get(count) + num);
+            }
+            else {
+               array2.set(count, num);
+            }
+         }
+         for(let [value, number] of array2) {
+               console.log(value + " = " + number);
+            }
+         }
+         original1("abcadeecfb")
+      </pre>
+      <p>a = 2<br>b = 2<br>c = 2<br>d = 1<br>e = 2<br>f = 1</p>
+   </section>
+   <script src="./script.js"></script>
+</body>
+</html>

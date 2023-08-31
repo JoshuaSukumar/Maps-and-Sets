@@ -1,0 +1,43 @@
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+   display: grid;
+   place-items: center;
+   width: 100hv;
+   height: 100vh;
+   background-color: cornflowerblue;
+   font-family:sans-serif;
+}
+h1{
+   color: brown;
+   margin-top: 10px;
+}
+h2{
+   color: red;
+   margin-bottom: 10px;
+}
+section {
+   width: 100hv;
+   margin: 20px auto;
+   padding: 30px;
+}
+
+pre {
+   background-color: whitesmoke;
+   border-radius: 4px;
+   font-size: 22px;
+   line-height: 35px;
+}
+
+p {
+   font-size: 40px;
+   color: green;
+   background-color: whitesmoke;
+   width: 100hv;
+   font-family: Arial;
+   padding-left: 80px;  
+   box-sizing: border-box;
+}
